@@ -69,6 +69,61 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-create-blog-in-github-by-hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/05/create-blog-in-github-by-hexo/" class="article-date">
+  <time datetime="2017-08-05T04:20:24.939Z" itemprop="datePublished">2017-08-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="hexo-创建博客方法-github"><a href="#hexo-创建博客方法-github" class="headerlink" title="hexo 创建博客方法 (github)"></a>hexo 创建博客方法 (github)</h3><p>E:\hexo\blog\source_posts( path of *.md)</p>
+<ol>
+<li>安装<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a></li>
+<li>安装<a href="https://git-for-windows.github.io/" target="_blank" rel="external">git for windows</a></li>
+<li>进入“Git Bash”<br>$ git config –global user.name “romepeng”<br>$ git config –global user.email “romepeng@outlook.com”</li>
+<li><p>安装Hexo：<br>$ npm install hexo-cli -g</p>
+<ol>
+<li>cd E: ;  mkdir hexo; cd hexo;</li>
+<li>hexo init blog<br>cd blog</li>
+<li>hexo generate</li>
+<li>hexo server [<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>]</li>
+<li><code>ssh-keygen -t rsa -C &quot;Github的注册邮箱地址&quot;</code><br>check: <code>ssh -T git@github.com</code></li>
+<li><p>hexo deploy<br>need:  vim _config.yml</p>
+<pre><code>deploy:
+    type:  git
+    repo: gir@github.com:romepeng/romepeng.github.io.git
+    branch: master
+
+` npm install hexo-deployer-git --save`
+</code></pre></li>
+</ol>
+</li>
+<li>new post update<br><code>hexo new &quot;My New Post&quot;
+  hexo clean
+  hexo g
+  hexo s
+  hexo d
+  ( hexo generate --deploy)</code></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://romepeng.github.io/2017/08/05/create-blog-in-github-by-hexo/" data-id="cj5yslg650000d0mv7nnxdx13" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-marxcio-help" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/08/02/marxcio-help/" class="article-date">
@@ -169,7 +224,7 @@
 <h2 id="关于收费"><a href="#关于收费" class="headerlink" title="关于收费"></a>关于收费</h2><p><strong>马克飞象</strong>为新用户提供 10 天的试用期，试用期过后需要<a href="maxiang.info/vip.html">续费</a>才能继续使用。未购买或者未及时续费，将不能同步新的笔记。之前保存过的笔记依然可以编辑。</p>
 <h2 id="反馈与建议"><a href="#反馈与建议" class="headerlink" title="反馈与建议"></a>反馈与建议</h2><ul>
 <li>微博：<a href="http://weibo.com/u/2788354117" target="_blank" rel="external">@马克飞象</a>，<a href="http://weibo.com/ggock" title="开发者个人账号" target="_blank" rel="external">@GGock</a></li>
-<li>邮箱：<a href="&#x6d;&#97;&#x69;&#108;&#116;&#111;&#x3a;&#x68;&#117;&#x73;&#116;&#103;&#111;&#99;&#107;&#64;&#x67;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#x68;&#117;&#x73;&#116;&#103;&#111;&#99;&#107;&#64;&#x67;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a></li>
+<li>邮箱：<a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#104;&#117;&#x73;&#116;&#x67;&#x6f;&#x63;&#x6b;&#64;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#104;&#117;&#x73;&#116;&#x67;&#x6f;&#x63;&#x6b;&#64;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a></li>
 </ul>
 <hr>
 <p>感谢阅读这份帮助文档。请点击右上角，绑定印象笔记账号，开启全新的记录与分享体验吧。</p>
@@ -178,7 +233,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://romepeng.github.io/2017/08/02/marxcio-help/" data-id="cj5ys7t8o0001psmvtrq5wb5j" class="article-share-link">Share</a>
+      <a data-url="https://romepeng.github.io/2017/08/02/marxcio-help/" data-id="cj5yslg6k0002d0mvj92d70yo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -223,7 +278,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://romepeng.github.io/2017/08/02/hello-world/" data-id="cj5ys7t880000psmvfd3tyy5r" class="article-share-link">Share</a>
+      <a data-url="https://romepeng.github.io/2017/08/02/hello-world/" data-id="cj5yslg650001d0mv13xem8dl" class="article-share-link">Share</a>
       
       
     </footer>
@@ -261,6 +316,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/08/05/create-blog-in-github-by-hexo/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2017/08/02/marxcio-help/">marxcio-help</a>

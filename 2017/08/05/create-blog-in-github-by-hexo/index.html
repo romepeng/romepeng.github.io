@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>归档: 2017 | ROME BLOG</title>
+  <title>ROME BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="生命不息， 学习不止。">
-<meta property="og:type" content="website">
+  <meta name="description" content="hexo 创建博客方法 (github)E:\hexo\blog\source_posts( path of *.md)  安装Node.js 安装git for windows 进入“Git Bash”$ git config –global user.name “romepeng”$ git config –global user.email “romepeng@outlook.com” 安装">
+<meta property="og:type" content="article">
 <meta property="og:title" content="ROME BLOG">
-<meta property="og:url" content="https://romepeng.github.io/archives/2017/index.html">
+<meta property="og:url" content="https://romepeng.github.io/2017/08/05/create-blog-in-github-by-hexo/index.html">
 <meta property="og:site_name" content="ROME BLOG">
-<meta property="og:description" content="生命不息， 学习不止。">
+<meta property="og:description" content="hexo 创建博客方法 (github)E:\hexo\blog\source_posts( path of *.md)  安装Node.js 安装git for windows 进入“Git Bash”$ git config –global user.name “romepeng”$ git config –global user.email “romepeng@outlook.com” 安装">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-08-05T04:21:25.318Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ROME BLOG">
-<meta name="twitter:description" content="生命不息， 学习不止。">
+<meta name="twitter:description" content="hexo 创建博客方法 (github)E:\hexo\blog\source_posts( path of *.md)  安装Node.js 安装git for windows 进入“Git Bash”$ git config –global user.name “romepeng”$ git config –global user.email “romepeng@outlook.com” 安装">
   
     <link rel="alternate" href="/atom.xml" title="ROME BLOG" type="application/atom+xml">
   
@@ -67,71 +68,70 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/08/05/create-blog-in-github-by-hexo/" class="archive-article-date">
-  <time datetime="2017-08-05T04:20:24.939Z" itemprop="datePublished">8月 5</time>
+        <section id="main"><article id="post-create-blog-in-github-by-hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/05/create-blog-in-github-by-hexo/" class="article-date">
+  <time datetime="2017-08-05T04:20:24.939Z" itemprop="datePublished">2017-08-05</time>
 </a>
-      
-    </header>
+    
   </div>
-</article>
-  
+  <div class="article-inner">
     
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/08/02/marxcio-help/" class="archive-article-date">
-  <time datetime="2017-08-02T13:18:24.000Z" itemprop="datePublished">8月 2</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/02/marxcio-help/">marxcio-help</a>
-    </h1>
-  
+        <h3 id="hexo-创建博客方法-github"><a href="#hexo-创建博客方法-github" class="headerlink" title="hexo 创建博客方法 (github)"></a>hexo 创建博客方法 (github)</h3><p>E:\hexo\blog\source_posts( path of *.md)</p>
+<ol>
+<li>安装<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a></li>
+<li>安装<a href="https://git-for-windows.github.io/" target="_blank" rel="external">git for windows</a></li>
+<li>进入“Git Bash”<br>$ git config –global user.name “romepeng”<br>$ git config –global user.email “romepeng@outlook.com”</li>
+<li><p>安装Hexo：<br>$ npm install hexo-cli -g</p>
+<ol>
+<li>cd E: ;  mkdir hexo; cd hexo;</li>
+<li>hexo init blog<br>cd blog</li>
+<li>hexo generate</li>
+<li>hexo server [<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>]</li>
+<li><code>ssh-keygen -t rsa -C &quot;Github的注册邮箱地址&quot;</code><br>check: <code>ssh -T git@github.com</code></li>
+<li><p>hexo deploy<br>need:  vim _config.yml</p>
+<pre><code>deploy:
+    type:  git
+    repo: gir@github.com:romepeng/romepeng.github.io.git
+    branch: master
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/08/02/hello-world/" class="archive-article-date">
-  <time datetime="2017-08-02T12:17:33.541Z" itemprop="datePublished">8月 2</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/02/hello-world/">Hello World</a>
-    </h1>
-  
+` npm install hexo-deployer-git --save`
+</code></pre></li>
+</ol>
+</li>
+<li>new post update<br><code>hexo new &quot;My New Post&quot;
+  hexo clean
+  hexo g
+  hexo s
+  hexo d
+  ( hexo generate --deploy)</code></li>
+</ol>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://romepeng.github.io/2017/08/05/create-blog-in-github-by-hexo/" data-id="cj5yslg650000d0mv7nnxdx13" class="article-share-link">Share</a>
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/08/02/marxcio-help/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">marxcio-help</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         
